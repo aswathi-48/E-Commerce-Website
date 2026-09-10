@@ -6,7 +6,7 @@
 
 
  body { 
-    font-family: Arial, sans-serif; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     background-color: #7cb8e6; 
 }
 .header { 
@@ -28,7 +28,7 @@
 } 
 
 .logo a { 
-    text-decoration: none; 
+    text-decoration: solid; 
     color: #0088cc; 
     font-size: 25px; 
     font-weight: bold; 
@@ -126,6 +126,77 @@
     cursor: pointer; 
 }
 
+.hero { 
+    width: 100%; 
+    min-height: calc(100vh - 80px); 
+    padding: 60px 8%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 60px; 
+    background-color: #eef5f7; 
+    box-sizing: border-box; 
+}
+
+.hero-content { 
+    flex: 1; 
+    max-width: 600px; 
+} 
+.hero-tagline { 
+    margin-bottom: 18px; 
+    color: #0a4461; 
+    font-size: 14px; 
+    font-weight: bold; 
+    letter-spacing: 3px; 
+} 
+.hero-content h1 {
+     margin: 0 0 25px; 
+     color: #1f3440; 
+     font-size: 58px; 
+     line-height: 1.1; 
+} 
+.hero-content h1 span {
+    display: block; 
+    color: #0a6688; 
+} 
+.hero-text { 
+    max-width: 530px;
+     margin-bottom: 30px; 
+     color: #596970; 
+     font-size: 18px; 
+     line-height: 1.7; 
+}
+.hero-btn { 
+    display: inline-block; 
+    padding: 14px 30px; 
+    background-color: #0a4461; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    font-weight: 600; 
+    border-radius: 6px; 
+    transition: all 0.3s ease; 
+} .hero-btn:hover { 
+    background-color: #07354d; 
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image { 
+    flex: 1; 
+    max-width: 600px; 
+} 
+.hero-image img { 
+    width: 100%; 
+    height: 450px; 
+    display: block; 
+    object-fit: cover; 
+    border-radius: 20px; 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18); 
+}
+
+/* responsive */
+
 
 @media (max-width: 850px) { 
     .navbar { flex-wrap: wrap; 
@@ -159,3 +230,36 @@
     order: 8; 
 } 
 }
+.hero {
+     min-height: auto; 
+     padding: 50px 20px; 
+     flex-direction: column; 
+     text-align: center; 
+     gap: 40px; 
+} 
+.hero-content { 
+    max-width: 100%; 
+} 
+.hero-tagline { 
+    font-size: 12px; 
+    letter-spacing: 2px; 
+} 
+.hero-content h1 { 
+    font-size: 40px; 
+} 
+.hero-text { 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 16px; 
+} 
+.hero-image { 
+    width: 100%; 
+    max-width: 550px; 
+} 
+.hero-image img { 
+    width: 100%; 
+    height: 320px; 
+    border-radius: 15px; 
+}
+
+

@@ -76,7 +76,9 @@
     }
 
     button{
-        padding: 10px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 20px;
+        width: 140px;
         background-color: #2563eb;
         border: none;
         border-radius: 7px;
@@ -89,6 +91,61 @@
     button:hover{
         background-color: #4374e0;
     }
+
+    .Hero-Section{
+          min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 70px 8%;
+    background: linear-gradient(135deg, #f8fafc, #e0e7ff);
+    overflow: hidden;
+    }
+
+    .hero-subtitle {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    color: #1f2937;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b7280;
+    margin-bottom: 30px;
+    max-width: 520px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+}
 
     @media (max-width: 900px) {
       .navbar {
@@ -126,3 +183,27 @@
         width: auto;
       }
     }
+
+    
+@media (max-width: 900px) {
+
+    .hero-Section {
+        min-height: auto;
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+       width: 100%;
+        height: 280px;
+        border-radius: 15px;
+    }
+}

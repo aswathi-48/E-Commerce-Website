@@ -262,4 +262,224 @@
     border-radius: 15px; 
 }
 
+/* 
+   CATEGORIES SECTION
+ */
 
+.categories {
+    width: 100%;
+    padding: 80px 8%;
+    background-color: #eef5f7;
+}
+
+
+/* Categories Container */
+
+.categories-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* 
+   SECTION HEADING
+ */
+
+.categories-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.categories-heading p {
+    color: #0a4461;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.categories-heading h2 {
+    color: #1f3440;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.categories-heading span {
+    color: #596970;
+    font-size: 16px;
+}
+
+
+/* 
+   CATEGORY GRID
+ */
+
+.category-grid {
+    display: grid;
+
+    /* Desktop - 4 cards */
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* 
+   CATEGORY CARD
+ */
+
+.category-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Card Hover */
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* 
+   CATEGORY IMAGE
+ */
+
+.category-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Image Hover */
+
+.category-card:hover .category-image img {
+    transform: scale(1.1);
+}
+
+
+/*
+   CATEGORY CONTENT
+ */
+
+.category-content {
+    padding: 22px 15px 25px;
+    text-align: center;
+}
+
+.category-content h3 {
+    color: #1f3440;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category-content p {
+    color: #596970;
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+/* 
+   VIEW PRODUCTS BUTTON
+ */
+
+.category-btn {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #0a4461;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 6px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Button Hover */
+
+.category-btn:hover {
+    background-color: #5c7c89;
+
+    transform: translateY(-2px);
+}
+
+
+/* 
+   TABLET
+   2 CARDS PER ROW
+ */
+
+@media (max-width: 900px) {
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories {
+        padding: 70px 5%;
+    }
+
+    .category-image {
+        height: 230px;
+    }
+}
+
+
+/* 
+   MOBILE
+   1 CARD PER ROW
+ */
+
+@media (max-width: 600px) {
+
+    .categories {
+        padding: 55px 20px;
+    }
+
+    .categories-heading h2 {
+        font-size: 32px;
+    }
+
+    .categories-heading span {
+        font-size: 14px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .category-image {
+        height: 260px;
+    }
+}

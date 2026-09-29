@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
         <nav class="navbar">
             <div class="logo">E-wow</div>
             <div class="nav-links">
@@ -37,103 +39,221 @@
                 <button type="button">search</button>
             </div>
             <div class="buttons">
-            <a href ="" class="btn">Cart</a>
-            <a href ="" class="btn">Login</a>
+                <a href="" class="btn">Cart</a>
+                <a href="" class="btn">Login</a>
             </div>
             <button class="menu-btn" aria-label="Open menu"> ☰ </button>
         </nav>
-    </header>   
+    </header>
 
-    <title>project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-</head>
-<section class="hero">
-     <div class="hero-content"> 
-        <p class="hero-tagline">EXPLORE • DISCOVER • ENJOY</p> 
-        <h1> Discover Your <span>FAVORITE FOOD</span> </h1> 
-        <p class="hero-text">  create unforgettable memories... </p> 
-        <a href="destination.html" class="hero-btn"> Explore Now </a>
-     </div>
-      <div class="hero-image"> <img src="fooddev.png" alt="hero image"> </div>
-    </div>
- </section>
-<!-- Categories Section -->
-<section class="categories" id="categories">
+    <!-- ================= PRODUCTS SECTION ================= -->
+    <section class="products" id="products">
+        <div class="products-container">
+            <div class="products-heading">
+                <p>ORDER • EAT • ENJOY</p>
+                <h2>Featured Foods</h2>
+                <span>
+                    Discover our collection of hot, fresh and delicious foods.
+                </span>
+            </div>
 
-    <div class="categories-container">
+            <div class="product-grid">
 
-        <div class="categories-heading">
-            <p>EXPLORE OUR MENU..</p>
-            <h2>Order by Category</h2>
-            <span>
-                Discover delicious food made fresh for every craving.
-            </span>
+                <!-- PRODUCT 1 - PIZZA -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Margherita Pizza">
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Pizza</p>
+                        <h3>Margherita Pizza</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <span>4.0</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹299</span>
+                            <span class="previous-price">₹399</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2 - BURGER -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="burgers.jpg" alt=" Burger">
+                        <span class="discount">15% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Burgers</p>
+                        <h3> Burger </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹199</span>
+                            <span class="previous-price">₹249</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3 - BIRYANI -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=700&q=80" alt=" Biryani">
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Biryani & Meals</p>
+                        <h3> Biryani </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <span>4.2</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹299</span>
+                            <span class="previous-price">₹399</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 4 - FRIED CHICKEN -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="-fried-chicken-.avif" alt="Fried Chicken">
+                        <span class="discount">30% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Chicken Special</p>
+                        <h3>Crispy Fried Chicken</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹349</span>
+                            <span class="previous-price">₹499</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 5 - PASTA -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80" alt="White Sauce Pasta">
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Pasta</p>
+                        <h3>White Sauce Pasta</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <span>4.3</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹249</span>
+                            <span class="previous-price">₹299</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 6 - DESSERT -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80" alt="Chocolate Brownie">
+                        <span class="discount">10% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Desserts</p>
+                        <h3>Chocolate Brownie</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <span>4.1</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹149</span>
+                            <span class="previous-price">₹199</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 7 - COMBO -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Family Combo">
+                        <span class="discount">20% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Combos</p>
+                        <h3>Family Combo Pack</h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹799</span>
+                            <span class="previous-price">₹999</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 8 - SHAWARMA -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?auto=format&fit=crop&w=700&q=80" alt=" Shawarma">
+                        <span class="discount">25% OFF</span>
+                    </div>
+                    <div class="product-content">
+                        <p class="product-category">Rolls</p>
+                        <h3> Shawarma </h3>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <span>4.4</span>
+                        </div>
+                        <div class="price">
+                            <span class="current-price">₹179</span>
+                            <span class="previous-price">₹229</span>
+                        </div>
+                        <div class="product-buttons">
+                            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+                            <button class="buy-btn">Order Now</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </div>
-
-        <div class="category-grid">
-
-            <!-- Pizza -->
-            <article class="category-card">
-                <div class="category-image">
-                    <img src="pizza.jpg"
-                         alt="Pizza category">
-                </div>
-
-                <div class="category-content">
-                    <h3>Pizza</h3>
-                    <p>Hot and cheesy pizzas with fresh toppings, baked to perfection.</p>
-                    <a href="#" class="category-btn">Order Now</a>
-                </div>
-            </article>
-
-            <!-- Burgers -->
-            <article class="category-card">
-                <div class="category-image">
-                    <img src="burgers.jpg"
-                         alt="Burgers category">
-                </div>
-
-                <div class="category-content">
-                    <h3>Burgers</h3>
-                    <p>Juicy burgers and combos prepared for quick and tasty delivery.</p>
-                    <a href="#" class="category-btn">Order Now</a>
-                </div>
-            </article>
-
-            <!-- Biryani -->
-            <article class="category-card">
-                <div class="category-image">
-                    <img src="-biryani-.png"
-                         alt="Biryani and meals">
-                </div>
-
-                <div class="category-content">
-                    <h3>Biryani & Meals</h3>
-                    <p>Authentic biryani and full meals delivered hot to your doorstep.</p>
-                    <a href="#" class="category-btn">Order Now</a>
-                </div>
-            </article>
-
-            <!-- Desserts -->
-            <article class="category-card">
-                <div class="category-image">
-                    <img src="-desserts-.avif"
-                         alt="Desserts and beverages">
-                </div>
-
-                <div class="category-content">
-                    <h3>Desserts</h3>
-                    <p>Sweet desserts and cold beverages to complete your meal.</p>
-                    <a href="#" class="category-btn">Order Now</a>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 </body>
     </header>
